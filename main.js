@@ -16,11 +16,11 @@ client.on('message', message => {
   const args = message.content.slice(prefix.length).split(/ +/);
   const command = args.shift().toLowerCase();
 
-  if(command === 'agree' && message.member.roles.cache.has('755207591407124495')){
+  if(command === 'agree' && message.member.roles.cache.has('711701131558125660')){
     message.author.send('You already have this role.')
   } else {
       message.author.send('PVT Role has been assigned!');
-      message.member.roles.add('755207591407124495');
+      message.member.roles.add('711701131558125660');
 
   }
 
@@ -28,8 +28,7 @@ client.on('message', message => {
 });
 
 client.on('guildMemberAdd', newMember => {
-  newMember.send('Welcome to the ST2 Server. Please read the rules in the xxx channel and type the --agree command once you have done so to receive the PVT role');
-  newMember.roles.add('755207591407124495');
+  newMember.send('Welcome to the ST2 Server. Please read the message in the Landing-Zone Channel to proceed. Thank you!');
 
 });
 

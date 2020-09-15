@@ -35,7 +35,9 @@ client.on('message', message => {
   }
   message.channel.send('Command Approved');
   }
-
+  if (command === 'promote' && !message.author.id == 'id1' || !message.author.id == 'id2'){
+    message.channel.send('Command Denied');
+  }
 
 
 });

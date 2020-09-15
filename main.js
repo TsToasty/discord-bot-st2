@@ -16,8 +16,8 @@ client.on('message', message => {
   const args = message.content.slice(prefix.length).split(/ +/);
   const command = args.shift().toLowerCase();
   const user = message.mentions.members.first();
-  const id1 = '188401709721190400';
-  const id2 = '130425663160188928';
+  const id1 = 188401709721190400;
+  const id2 = 130425663160188928;
 
   if(command === 'agree' && !message.member.roles.cache.has('711701131558125660')){
     message.author.send('PVT Role has been assigned!');

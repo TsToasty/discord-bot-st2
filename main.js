@@ -36,7 +36,7 @@ client.on('message', message => {
         user.roles.add('711701218904506438');
         user.roles.remove('712839907189456986');
       }
-      message.channel.send('Command Approved');
+      message.channel.send('Command Approved ' +user +' has been promoted!');
     }
       else{
         message.channel.send('Command Denied');

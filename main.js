@@ -19,7 +19,7 @@ client.on('message', message => {
   const user = message.mentions.members.first();
   const id1 = 188401709721190400; //Chris
   const id2 = 130425663160188928; //Andrew
-
+  const id3 = 104757384102068224; //Toasty
 //Promote Users who type in --agree without the PVT Role
   if(command === 'agree' && !message.member.roles.cache.has('711701131558125660')){
     message.author.send('PVT Role has been assigned!');
@@ -27,7 +27,7 @@ client.on('message', message => {
   }
 //Basic Promotion Command executable by Andrew and Chris
   if(command === 'promote'){
-    if(message.author.id == 'id1' || message.author.id == 'id2'){
+    if(message.author.id == 'id1' || message.author.id == 'id2' || message.author.id == 'id3'){
       if(user.roles.cache.some(role => role.name === 'PVT')){
         user.roles.add('712839907189456986');
         users.roles.remove('711701131558125660');

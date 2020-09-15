@@ -19,12 +19,9 @@ client.on('message', message => {
   const id1 = '188401709721190400';
   const id2 = '130425663160188928';
 
-  if(command === 'agree' && message.member.roles.cache.has('711701131558125660')){
-    message.author.send('You already have this role.')
-  } else {
-      message.author.send('PVT Role has been assigned!');
-      message.member.roles.add('711701131558125660');
-
+  if(command === 'agree' && !message.member.roles.cache.has('711701131558125660')){
+    message.author.send('PVT Role has been assigned!');
+    message.member.roles.add('711701131558125660');
   }
 
   if(command === 'promote' && message.author.id == id1 || message.author.id == id2){

@@ -27,7 +27,7 @@ client.on('message', message => {
   }
 //Basic Promotion Command executable by Andrew and Chris
   if(command === 'promote'){
-    if(message.author.id == 'id1' || message.author.id == 'id2' || message.author.id == 'id3'){
+    if(message.author.id == id1 || message.author.id == id2 || message.author.id == id3){
       if(user.roles.cache.some(role => role.name === 'PVT')){
         user.roles.add('712839907189456986');
         users.roles.remove('711701131558125660');

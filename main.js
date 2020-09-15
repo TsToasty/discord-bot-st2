@@ -24,7 +24,7 @@ client.on('message', message => {
     message.member.roles.add('711701131558125660');
   }
 
-  if(command === 'promote' && message.author.id == id1 || message.author.id == id2){
+  if(command === 'promote' && message.author.id == 'id1' || message.author.id == 'id2'){
   if(user.roles.cache.some(role => role.name === 'PVT')){
     user.roles.add('712839907189456986');
     users.roles.remove('711701131558125660');

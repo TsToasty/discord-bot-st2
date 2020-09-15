@@ -17,9 +17,9 @@ client.on('message', message => {
   const args = message.content.slice(prefix.length).split(/ +/);
   const command = args.shift().toLowerCase();
   const user = message.mentions.members.first();
-  const id1 = 188401709721190400; //Chris
-  const id2 = 130425663160188928; //Andrew
-  const id3 = 104757384102068224; //Toasty
+  const id1 = '188401709721190400'; //Chris
+  const id2 = '130425663160188928'; //Andrew
+  const id3 = '104757384102068224'; //Toasty
 //Promote Users who type in --agree without the PVT Role
   if(command === 'agree' && !message.member.roles.cache.has('711701131558125660')){
     message.author.send('PVT Role has been assigned!');

@@ -30,9 +30,11 @@ client.on('message', message => {
   if(command === 'promote' && message.author.id == id1 || message.author.id == id2){
   if(user.roles.cache.some(role => role.name === 'PVT')){
     user.roles.add('712839907189456986');
+    users.roles.remove('711701131558125660');
   }
   if(user.roles.cache.some(role => role.name === 'PFC')){
     user.roles.add('711701218904506438');
+    users.roles.remove('712839907189456986');
   }
 
   }

@@ -46,7 +46,7 @@ client.on('message', message => {
 
 
 client.on('guildMemberAdd', newMember => {
-  newMember.send('Welcome to the ST2 Server. Please read the message in the Landing-Zone Channel to proceed. Thank you!');
+  newMember.send('Welcome to the ST2 Server. \n Please read the message in the Landing-Zone Channel to proceed. \n Make sure to download the mods, you will find the preset in announcements. Make sure to add GRAD Trenches. \n Operations are on Monday, Wednesday, Friday and Sunday at 1600 CET+1 \n Thank you!');
 
 });
 

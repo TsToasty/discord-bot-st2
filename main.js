@@ -44,7 +44,8 @@ client.on('message', message => {
     }
     if(command === 'clear'){
       const amount = (message.content - 'clear ');
-      message.channel.bulkDelete(amount);
+      var g = parseInt(amount, 10)
+      message.channel.bulkDelete(g);
     }
 });
 

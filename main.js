@@ -51,7 +51,7 @@ client.on('message', message => {
       if (amount < 1) return msg.reply('You have to delete at least 1 message!');
       msg.channel.messages.fetch({ limit: amount }).then(messages => {
         msg.channel.bulkDelete(messages);
-      )});
+      });
 
     }
 });

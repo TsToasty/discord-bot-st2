@@ -49,7 +49,7 @@ client.on('message', message => {
       if (isNaN(amount)) return msg.reply('The amount parameter isn`t a number!');
       if (amount > 100) return msg.reply('You can`t delete more than 100 messages at once!');
       if (amount < 1) return msg.reply('You have to delete at least 1 message!');
-      await msg.channel.messages.fetch({ limit: amount }).then(messages => {
+      msg.channel.messages.fetch({ limit: amount }).then(messages => {
         msg.channel.bulkDelete(messages);
       )});
 

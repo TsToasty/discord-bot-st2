@@ -42,6 +42,10 @@ client.on('message', message => {
         message.channel.send('Command Denied');
       }
     }
+    if(command === 'clear'){
+      const amount = (message.content - 'clear ');
+      message.channel.bulkDelete(amount);
+    }
 });
 
 

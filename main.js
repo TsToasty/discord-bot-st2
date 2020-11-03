@@ -24,6 +24,7 @@ client.on('message', message => {
   if(command === 'agree' && !message.member.roles.cache.has('711701131558125660')){
     message.author.send('PVT Role has been assigned!');
     message.member.roles.add('711701131558125660');
+    message.channel.bulkDelete(1);
   }
 //Basic Promotion Command executable by Andrew and Chris
   if(command === 'promote'){

@@ -20,13 +20,14 @@ client.on('message', message => {
   const id1 = '188401709721190400'; //Chris
   const id2 = '130425663160188928'; //Andrew
   const id3 = '104757384102068224'; //Toasty
-//Promote Users who type in --agree without the PVT Role
+//Give role when say magic word
   if(command === 'agree' && !message.member.roles.cache.has('711701131558125660')){
     message.author.send('PVT Role has been assigned!');
     message.member.roles.add('711701131558125660');
     message.channel.bulkDelete(1);
   }
-//Basic Promotion Command executable by Andrew and Chris
+//You have rank? You can promot, cool right?
+//This code takes a while to execute, some coffee might help
   if(command === 'promote'){
     if(message.author.id === id1 || message.author.id === id2 || message.author.id === id3){
       if(user.roles.cache.some(role => role.name === 'PVT')){
@@ -43,6 +44,12 @@ client.on('message', message => {
         message.channel.send('Command Denied');
       }
     }
+
+    if(command = 'bandages'){
+      message.channel.send('Bring at least ' + Math.floor(Math.random() * 100000) + 1; + '\n You can never have enough')
+
+    }
+    //Kills messages. Americans hate words right?
     if(command === 'clear'){
       const args = message.content.split(' ').slice(1);
       const amount = args.join(' ');
@@ -57,7 +64,7 @@ client.on('message', message => {
     }
 });
 
-
+//Does shit when people join server, please no ask, thank!
 client.on('guildMemberAdd', newMember => {
   newMember.send('Welcome to the ST2 Server. \n Please read the message in the Landing-Zone Channel to proceed. \n Make sure to download the mods, you will find the preset in announcements & server info. \n \n Operations are on Monday, Wednesday, Friday and Sunday at 1600 CET+1 \n Write +-agree in the landing zone channel to be promoted to PVT \n Thank you!');
 

@@ -45,7 +45,7 @@ client.on('message', message => {
       }
     }
 
-    if(command = 'bandages'){
+    if(command === 'bandages'){
       message.channel.send('Bring at least ' + Math.floor(Math.random() * 100000) + 1; + '\n You can never have enough')
 
     }

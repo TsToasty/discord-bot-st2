@@ -44,7 +44,7 @@ client.on('message', message => {
 //Does shit when people join server, please no ask, thank!
 client.on('guildMemberAdd', newMember => {
   newMember.send('Welcome to the ST2 Server. \n Make sure to download the mods, you will find the preset in announcements & server info. \n \n Operations are on Monday, Wednesday, Friday and Sunday at 1900 CET \n I hope you enjoy your stay!');
-  newMember.addRole('711701131558125660');
+  newMember.addRole(guildMember.guild.roles.find(role => role.name === "PVT"));
 });
 
 //Last Line pls thank

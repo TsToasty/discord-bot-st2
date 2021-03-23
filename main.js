@@ -43,8 +43,9 @@ client.on('message', message => {
 
 //Does shit when people join server, please no ask, thank!
 client.on('guildMemberAdd', newMember => {
-  message.newMember.send('Welcome to the ST2 Server. \n Make sure to download the mods, you will find the preset in announcements & server info. \n \n Operations are on Monday, Wednesday, Friday and Sunday at 1900 CET \n I hope you enjoy your stay');
-  newMember.roles.add('711701131558125660');
+  newMember.send('Welcome to the ST2 Server. \n Make sure to download the mods, you will find the preset in announcements & server info. \n \n Operations are on Monday, Wednesday, Friday and Sunday at 1900 CET \n I hope you enjoy your stay');
+  let myRole = message.guild.roles.cache.get("711701131558125660");
+  newMember.roles.add(myRole);
 });
 
 //Last Line pls thank

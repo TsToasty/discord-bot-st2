@@ -22,7 +22,7 @@ client.on('message', message => {
     .setTitle('Him')
     .setColor('GREEN')
     .setDescription('He arrived')
-    .addField(' \n
+    .addField('
        ⠑⡄⠀⠀⠀⠀⠀⠀⠀ ⣀⣀⣤⣤⣤⣀
     ⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀
     ⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆

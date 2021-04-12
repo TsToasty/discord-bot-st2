@@ -12,7 +12,7 @@ client.once('ready', () =>  {
   console.log('ST2Bot reporting for duty!');
 });
 client.on('message', message => {
-  if(message.author === "263612707037511680" || message.author === "104757384102068224"){
+  if(message.author.id === "263612707037511680" || message.author.id === "104757384102068224"){
     message.react(':egg:');
 
   }

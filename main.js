@@ -20,7 +20,7 @@ client.on('message', message => {
   if(message.content.includes('shrek') || message.content.includes('pog')){
     const embed = new Discord.RichEmbed()
     .setTitle('Him')
-    .setColor(#22f036)
+    .setColor(22f036)
     .setDescription('He arrived')
     .addField(' \n
        ⠑⡄⠀⠀⠀⠀⠀⠀⠀ ⣀⣀⣤⣤⣤⣀

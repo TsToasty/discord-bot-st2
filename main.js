@@ -14,7 +14,9 @@ client.once('ready', () =>  {
 
 client.on('message', message => {
   message.react('🥚');
-
+  if(message.content.includes('face')){
+    message.channel.send('👁️👄👁️');
+  }
 
 });
 

@@ -35,11 +35,11 @@ client.on('message', message => {
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉`);
   }
   if(message.content.includes('reeves')){
-    var i = 0;
-    while(i < 4){
-      message.channel.send('Nightmare');
-      i + 1;
-    }
+    message.channel.send('Nightmare');
+    message.channel.send('Nightmare');
+    message.channel.send('Nightmare');
+    message.channel.send('Nightmare');
+    message.channel.send('Nightmare');
   }
 
 

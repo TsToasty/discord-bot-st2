@@ -100,30 +100,6 @@ client.on('message', message => {
 
 
 });
-//client.on('message', async message => {
-	// Join the same voice channel of the author of the message
-//	if (message.member.voice.channel && message.content.includes('tacobell')) {
-	//	const connection = await message.member.voice.channel.join();
 
-  //  const dispatcher = connection.play('https://github.com/TsToasty/discord-bot-st2/blob/master/dong.mp3');
-
-  //  dispatcher.on('start', () => {
-  //	   console.log('audio.mp3 is now playing!');
-  //  });
-
-  //  dispatcher.on('finish', () => {
-  //	   console.log('audio.mp3 has finished playing!');
-  //  });
-
-  // Always remember to handle errors appropriately!
-  //  dispatcher.on('error', console.error);
-  //  connection.disconnect();
-	//}
-
-
-
-
-
-//});
 //Last Line pls thank
 client.login(process.env.token);

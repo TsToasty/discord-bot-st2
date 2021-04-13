@@ -116,14 +116,14 @@ client.on('message', message => {
   //  });
 
   // Always remember to handle errors appropriately!
-    dispatcher.on('error', console.error);
-    connection.disconnect();
-	}
+  //  dispatcher.on('error', console.error);
+  //  connection.disconnect();
+	//}
 
 
 
 
 
-});
+//});
 //Last Line pls thank
 client.login(process.env.token);

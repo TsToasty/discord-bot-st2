@@ -75,7 +75,7 @@ client.on('message', message => {
     message.channel.send((Math.floor(100000 + Math.random() * 900000)));
   }
 
-  if(message.content.includes('sus' || 'amogus')){
+  if(message.content.includes('sus' )|| message.content.includes('amogus')){
     message.channel.send(`
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀⠀⠀⠀⠀⠀

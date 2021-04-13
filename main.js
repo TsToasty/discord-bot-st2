@@ -117,6 +117,7 @@ client.on('message', async message => {
 
   // Always remember to handle errors appropriately!
     dispatcher.on('error', console.error);
+    connection.disconnect();
 	}
 
 

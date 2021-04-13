@@ -71,7 +71,7 @@ client.on('message', message => {
 ⡿⠋⠄⠄⠄⠄⢀⠒⠝⣞⢿⡿⣿⣽⢿⡽⣧⣳⡅⠌⠻⣿
 ⠁⠄⠄⠄⠄⠄⠐⡐⠱⡱⣻⡻⣝⣿⣽⢿⡽⣧⣳⣧⠌⠻`);
   }
-  if(message.content.includes('sauce')){
+  if(message.content.includes('sauce') && !message.author.bot){
     message.channel.send('Dont know if this is sauce but here you go! \n '+ (Math.floor(100000 + Math.random() * 900000)));
   }
 

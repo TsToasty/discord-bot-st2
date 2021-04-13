@@ -41,7 +41,30 @@ client.on('message', message => {
     message.channel.send('Nightmare');
     message.channel.send('Nightmare');
   }
+  if (message.content.includes('honk')){
+    message.channel.send(`                                   ___
+                               ,-""   `.
+                             ,'  _   e )`-._
+                            /  ,' `-._<.===-'
+                           /  /
+                          /  ;
+              _          /   ;
+ (`._    _.-"" ""--..__,'    |
+ <_  `-""                     \
+  <`-                          :
+   (__   <__.                  ;
+     `-.   '-.__.      _.'    /
+        \      `-.__,-'    _,'
+         `._    ,    /__,-'
+            ""._\__,'< <____
+                 | |  `----.`.
+                 | |        \ `.
+                 ; |___      \-``
+                 \   --<
+                  `.`.<
+                    `-' `);
 
+  }
 
 });
 

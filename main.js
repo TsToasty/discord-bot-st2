@@ -105,7 +105,7 @@ client.on('message', async message => {
 	if (message.member.voice.channel && message.content.includes('tacobell')) {
 		const connection = await message.member.voice.channel.join();
 
-    const dispatcher = connection.play('dong.mp3');
+    const dispatcher = connection.play('https://github.com/TsToasty/discord-bot-st2/blob/master/dong.mp3');
 
     dispatcher.on('start', () => {
   	   console.log('audio.mp3 is now playing!');

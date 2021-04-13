@@ -35,7 +35,7 @@ client.on('message', message => {
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉`);
   }
   if(message.content.includes('reeves')){
-    int i = 0;
+    var i = 0;
     while(i <= 5)
       message.channel.send('Nightmare');
       i++

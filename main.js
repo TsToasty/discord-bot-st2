@@ -98,10 +98,13 @@ client.on('message', message => {
 ⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠿⠿⠿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`);
   }
 
-  if(message.content.includes('@')){
+  if(message.content.includes('@') && !message.content.includes('ST2')){
     message.channel.send('Nvm');
   }
+  if(message.content.includes('@') && message.content.includes('ST2')){
+    message.channel.send('You called?');
 
+  }
 });
 
 //Last Line pls thank

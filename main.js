@@ -98,13 +98,14 @@ client.on('message', message => {
 ⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠿⠿⠿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`);
   }
 
-  if(message.content.includes('@') && !message.content.includes('ygg')){
+  if(message.content.includes('@')){
     message.channel.send('Nvm');
   }
-  if(message.content.includes('@') && message.content.includes('ygg')){
-    message.channel.send('You called?');
 
-  }
+
+
+
+
 });
 
 //Last Line pls thank

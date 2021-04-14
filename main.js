@@ -98,6 +98,9 @@ client.on('message', message => {
 ⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠿⠿⠿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`);
   }
 
+  if(message.content.includes('@')){
+    message.channel.send('Nvm');
+  }
 
 });
 

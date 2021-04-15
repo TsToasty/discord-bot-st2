@@ -101,8 +101,13 @@ client.on('message', message => {
   if(message.content.includes('@')){
     message.channel.send('Nvm');
   }
+  if(message.content === 'SPD'){
+    message.channel.send('https://static.wikia.nocookie.net/jerma-lore/images/e/e3/JermaSus.jpg/revision/latest?cb=20201206225609');
+  }
 
-
+  if(message.content === 'nigger' || message.content === 'Nigger'){
+    message.channel.send('Egg says you are a racist');
+  }
 
 
 

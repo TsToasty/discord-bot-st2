@@ -5,7 +5,7 @@ const client = new Client();
 const prefix = '+-';
 
 //const target = '<@306845896501624832>'
-const target = '<@104757384102068224>'
+const target = '104757384102068224'
 
 
 
@@ -112,7 +112,7 @@ client.on('message', message => {
   if(message.content === 'WhoAsked'){
     message.channel.send('https://tenor.com/view/disney-damn-thats-crazy-did-iask-no-one-asked-gif-17744004');
   }
-  if (message.author.id === target){
+  if (message.author.id == target){
     message.channel.send('Oh hello Creator');
   }
 

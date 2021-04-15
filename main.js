@@ -112,7 +112,7 @@ client.on('message', message => {
   if(message.content === 'WhoAsked'){
     message.channel.send('https://tenor.com/view/disney-damn-thats-crazy-did-iask-no-one-asked-gif-17744004');
   }
-  if (message.author === target){
+  if (message.author.id === target){
     message.channel.send('Oh hello Creator');
   }
 

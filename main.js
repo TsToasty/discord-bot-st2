@@ -4,8 +4,8 @@ const client = new Client();
 
 const prefix = '+-';
 
-//const target = '<@306845896501624832>'
-const target = '104757384102068224'
+const target = '306845896501624832'
+
 
 
 
@@ -113,7 +113,7 @@ client.on('message', message => {
     message.channel.send('https://tenor.com/view/disney-damn-thats-crazy-did-iask-no-one-asked-gif-17744004');
   }
   if (message.author.id == target){
-    message.channel.send('Oh hello Creator');
+    message.reply("Ya get what I'm sayin?");
   }
 
 });

@@ -108,7 +108,7 @@ client.on('message', message => {
   if(message.content === 'nigger' || message.content === 'Nigger'){
     message.channel.send('Egg says you are a racist');
   }
-  if(command === 'WhoAsked'){
+  if(message.content === 'WhoAsked'){
     message.channel.send('https://tenor.com/view/disney-damn-thats-crazy-did-iask-no-one-asked-gif-17744004');
   }
 

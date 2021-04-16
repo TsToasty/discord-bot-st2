@@ -76,7 +76,7 @@ client.on('message', message => {
     message.channel.send('Dont know if this is sauce but here you go! \n '+ (Math.floor(100000 + Math.random() * 900000)));
   }
 
-  if(message.content.includes('sus' )|| message.content.includes('amogus')){
+  if(message.content.includes('sus' )|| message.content.includes('amogus') && !message.author.bot){
     message.channel.send(`
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀⠀⠀⠀⠀⠀
@@ -112,7 +112,7 @@ client.on('message', message => {
   if(message.content === 'WhoAsked'){
     message.channel.send('https://tenor.com/view/disney-damn-thats-crazy-did-iask-no-one-asked-gif-17744004');
   }
-  
+
 
 });
 

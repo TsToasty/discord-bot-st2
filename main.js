@@ -76,7 +76,8 @@ client.on('message', message => {
     message.channel.send('Dont know if this is sauce but here you go! \n '+ (Math.floor(100000 + Math.random() * 900000)));
   }
 
-  if(message.content.includes('sus' )|| message.content.includes('amogus') && !message.author.bot){
+if(!message.author.bot){
+  if(message.content.includes('sus' )|| message.content.includes('amogus')){
     message.channel.send(`
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀⠀⠀⠀⠀⠀
@@ -98,7 +99,7 @@ client.on('message', message => {
 ⠀⠀⠀⠀⠀⠀⠀⢿⣿⣦⣄⣀⣠⣴⣿⣿⠁⠀⠈⠻⣿⣿⣿⣿⡿⠏⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠿⠿⠿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`);
   }
-
+}
   if(message.content.includes('@')){
     message.channel.send('Nvm');
   }
